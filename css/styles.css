@@ -21,8 +21,21 @@ body {
     font-size: 14px;
     margin: 0;
    }
-    
+    h1, h2, h3, p, ul {margin: 0;
+        padding: 0;
+        
+    }
 /* Site navigation*/
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.site-header{
+    border-bottom: solid 1px var(--light-grey-color);
+}
 
 .logo {
 text-decoration-line: none;
@@ -81,6 +94,8 @@ letter-spacing: 0.03em;
 
 .site-hero {
 background-color:var(--dark-bacground-color);
+width: 1600px;
+text-align: center;
 }
 .site-hero-title{color: var(--white-color);
 font-size: 44px;
@@ -89,6 +104,10 @@ line-height: 1.36;
 letter-spacing: 0.06em;
 text-align: center;
 text-transform: uppercase;
+padding-top: 200px;
+padding-left: 452px;
+padding-right: 452px;
+padding-bottom: 30px;
 }
 .site-hero-button {
     color: var(--white-color);
@@ -99,6 +118,14 @@ text-transform: uppercase;
     font-family: inherit;
     cursor: pointer;
     letter-spacing: 0.06em;
+    display: inline-block;
+    min-width: 200px;
+    height: 50px;
+    padding: 10px 32px;
+    text-align: center;
+    margin-bottom: 200px;
+    border-radius: 4px;
+
 
 }
 .site-hero-button:hover,
@@ -119,11 +146,19 @@ text-transform: uppercase;
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+.section{
+    padding-top: 94px;
+   padding-bottom: 94px;
+}
+.work-section{ padding-top: 0;
+padding-bottom: 94px;}
+
 .section-title {
     color: var(--title-text-color);
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+    margin-bottom: 50px;
 }
 .main-text-list{
     list-style: none;
@@ -133,6 +168,7 @@ text-transform: uppercase;
     line-height: 1.14;
     text-transform: uppercase;
     font-size: 14px;
+    margin-bottom: 10px;
     }
 .text{
 line-height: 1.7;
@@ -144,21 +180,34 @@ line-height: 1.7;
 .company-team{
     background-color: var(--grey-bacground-color);
     }
+.team-member-card{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    max-width: 270px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+}
 .team-list{
     list-style: none;
     }
 .team-member{
     background-color: var(--white-color);
+    max-width: 270px;
+    
 }
 .name {
     color: var(--title-text-color);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.18;
+    margin-bottom: 10px;
 }
 .profession {
     font-size: 16px;
     line-height: 1.18;
+
 }
 
 
@@ -174,6 +223,7 @@ line-height: 1.7;
 }
 .button-list{
 list-style: none;
+margin-bottom: 50px;
 }
 .filter-button { 
 background-color: var(--grey-bacground-color);
@@ -183,6 +233,11 @@ background-color: var(--grey-bacground-color);
  line-height: 1.62;
  letter-spacing: 0.03em;
  cursor: pointer;
+ display: inline-block;
+ max-height: 38px;
+ padding:6px 22px;
+ border-radius: 4px;
+ border-color: transparent;
 }
 .filter-button:focus,
 .filter-button:hover  {
@@ -190,15 +245,27 @@ background-color: var(--grey-bacground-color);
     background-color:var(--accent-color);
  
 }
-
+.project-card{
+    max-width: 370px;
+}
 .project-title{
 color: var(--title-text-color);
 font-size:18px ;
 line-height:2 ;
 letter-spacing: 0.06em;
 background-color: var(--white-color);
+margin-bottom: 4px;
 }
-
+.project-card-description {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid 1PX var(--main-border-color) ;
+    border-left: solid 1PX var(--main-border-color);
+    border-right: solid 1PX var(--main-border-color) ;
+    
+}
 .project-description {
     font-size: 16px;
     line-height: 1.87;
@@ -210,12 +277,13 @@ background-color: var(--white-color);
 .footer{
     background-color: var(--dark-bacground-color);
 }
-.footer>.logo { color:var(--white-color);
+.footer-logo { color:var(--white-color);
     font-family:Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+    text-decoration: none;
 }
 
 
