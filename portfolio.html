@@ -9,34 +9,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css"/>
 </head>
-<body>
+<body class="page">
     <header class="site-header">
-        <div class="container">
+        <div class="container header-menu">
+            <a href="./index.html" class="logo" lang="en"><span class="logo-first">Web</span>Studio</a>
             <nav>
-                <a href="./index.html" class="logo" lang="en"><span class="logo-first">Web</span>Studio</a>
-            
                 <ul class="site-nav-list">    
-                    <li > <a class="site-nav-link" href="./index.html">Студия</a></li>
-                    <li > <a class="site-nav-link-current" href="./portfolio.html">Портфолио</a></li>
-                    <li > <a class="site-nav-link" href="">Контакты</a></li>
+                    <li class="item"> <a class="site-nav-link" href="./index.html">Студия</a></li>
+                    <li class="item"> <a class="site-nav-link-current" href="./portfolio.html">Портфолио</a></li>
+                    <li class="item"> <a class="site-nav-link" href="">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="site-header-contacts list">
-                <li> <a class="site-header-contacts" href="mailto:info@devstudio.com" lang="en">info@devstudio.com</a></li>
-                <li> <a class="site-header-contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>           
+                <li class="item"> <a class="site-header-contact" href="mailto:info@devstudio.com" lang="en">info@devstudio.com</a></li>
+                <li class="item"> <a class="site-header-contact" href="tel:+380961111111">+38 096 111 11 11</a></li>           
             </ul>
         </div>
        
     </header>  
-    <main class="portfolio-main container">
+    <main class=" container portfolio-main">
         <section  class="section">
             <h1 class=visually-hidden >Галерея робот</h1>
             <ul class="button-list">
-                <li><button type="button" class="filter-button">Все</button></li>
-                <li><button type="button" class="filter-button">Веб-сайты</button></li>
-                <li><button type="button" class="filter-button">Приложения</button></li>
-                <li><button type="button" class="filter-button">Дизайн</button></li>
-                <li><button type="button" class="filter-button">Маркетинг</button></li>
+                <li class="btn"><button type="button" class="filter-button">Все</button></li>
+                <li class="btn"><button type="button" class="filter-button">Веб-сайты</button></li>
+                <li class="btn"><button type="button" class="filter-button">Приложения</button></li>
+                <li class="btn"><button type="button" class="filter-button">Дизайн</button></li>
+                <li class="btn"><button type="button" class="filter-button">Маркетинг</button></li>
             </ul>
              <ul class="project-list">
                 <li class="project-card"><img width="370" src="./images/portfolio1.jpg" alt="Веб-сайт Технокряк">
@@ -106,16 +105,18 @@
         </section>   
     </main>
     <footer class="footer">
-        <a href="./index.html" class="logo" lang="en"><span class="logo-first">Web</span>Studio</a>
+        <div class="container">
+            <a href="./index.html" class="footer-logo" lang="en"><span class="logo-first">Web</span>Studio</a>
         
-        <address >
-            <ul class="contacts-list">
-                <li><a class="footer-addres" href="https://bit.ly/3pXMvUd" target="_blank" rel="noopener noreferrer">г. Киев, пр-т
+            <address >
+                <ul class="contacts-list">
+                    <li ><a class="footer-addres" href="https://bit.ly/3pXMvUd" target="_blank" rel="noopener noreferrer">г. Киев, пр-т
                     Леси Украинки, 26</a> </li>
-                <li><a class="footer-contact" href="mailto:info@devstudio.com" lang="en">info@example.com</a> </li>
-                <li><a class="footer-contact" href="tel:+380961111111">+38 096 111 11 11</a> </li>
+                    <li><a class="footer-contact mail" href="mailto:info@devstudio.com" lang="en">info@example.com</a> </li>
+                    <li><a class="footer-contact phone" href="tel:+380961111111">+38 096 111 11 11</a> </li>
               </ul>
         </address>   
+        </div>
         
      </footer>
     
