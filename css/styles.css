@@ -40,6 +40,7 @@ img {
 address{ 
     font-style: normal;
     text-decoration: none;
+    margin-top: 20px;
 }
 .section{
     padding-top: 94px;
@@ -373,7 +374,7 @@ margin-bottom: 4px;
     padding-right: 24px;
     padding-top: 20px;
     padding-bottom: 20px;
-    border: solid 1PX var(--main-border-color) ;
+    border: solid 1px var(--main-border-color) ;
     border-top: none;
 }
 .project-description {
@@ -396,20 +397,20 @@ margin-bottom: 4px;
     line-height: 1.38;
     letter-spacing: 0.03em;
     text-decoration: none;
-    margin-bottom: 20px;
 }
 
-
-.contacts-list {
-line-height: 1.7;
-display: block;
+.footer-item{
+    display: block;
 }
-
+.footer-item:not(:last-child){
+    margin-bottom: 9px;
+}
 
 .footer-address{
     color: var(--white-color);
-    margin-bottom: 9px;
-    text-decoration: none;
+    margin-top: 20px;
+    line-height: 1.71;
+
     
 }
 .footer-address:hover,
@@ -417,16 +418,11 @@ display: block;
     color: var(--accent-color);
 }
 .footer-contact {
-    text-decoration: none;
     color:var(--footer-contact-color);
+    line-height: 1.71;
     }
 
-.footer-contact.mail {
-    margin-bottom: 9px;
-}
-
-
-   
+  
 .footer-contact:hover,
 .footer-contact:focus{
     color: var(--accent-color);
